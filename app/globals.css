@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts/iransans/ttf/IRANSansWeb_Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts//iransans/ttf/IRANSansWeb.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts/iransans/ttf/IRANSansWeb_Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts/iransans/ttf/IRANSansWeb_Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts/iransans/ttf/IRANSansWeb_Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: iran-sans;
+  src: url(/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: iran-sans;
+  src: url(/public/fonts/iransans/ttf/IRANSansWeb_Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/poppins/Poppins-Medium.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: iran-sans !important;
+}
+.rtl {
+  direction: rtl;
+}
+.line {
+  width: 1px;
+  height: 87%;
+  position: absolute;
+  background: #d1d1d1;
+  left: 0;
+  border-radius: 100%;
 }
